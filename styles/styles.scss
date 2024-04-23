@@ -1,11 +1,28 @@
-body {
-  margin: 0;
+// Variáveis
+// Cores
+$first-color: #0c0421;
+$second-color: #4e75ff;
+$third-color: #85a0ff;
+$fourth-color: #e8f5c8;
+$color-default: #cad4fa;
+$first-gradiente: linear-gradient(180deg, #e8f5c8 0%, #ffffff 96.87%);
+$second-gradiente: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.7) 0%,
+  rgba(202, 212, 250, 0.3) 100%
+);
+//Fontes
+$ft-text: "Montserrat", sans-serif;
+$ft-title: "Krona One", sans-serif;
+
+* {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 header {
-  background: linear-gradient(180deg, #e8f5c8 0%, #ffffff 96.87%);
+  background: $first-gradiente;
   padding: 2rem;
   nav {
     display: flex;
@@ -24,10 +41,47 @@ header {
       }
       a {
         text-decoration: none;
-        color: #0c0421;
+        color: $first-color;
         font-weight: 500;
-        font-family: "Montserrat", sans-serif;
+        font-family: $ft-text;
       }
+    }
+  }
+  #home {
+    max-width: 1040px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .textos-home {
+      max-width: 464px;
+      h1 {
+        font-size: 42px;
+        color: $first-color;
+        margin-bottom: 2rem;
+        font-family: $ft-title;
+        span {
+          color: $second-color;
+        }
+      }
+    }
+    .img-home {
+      max-width: 474px;
+      img {
+        width: 100%;
+      }
+    }
+    .btn-main {
+      width: 280px;
+      border-radius: 40px;
+      padding: 24px;
+      gap: 10px;
+      background-color: $second-color;
+      font-family: $ft-text;
+      font-size: 22px;
+      border: none;
+      color: white;
     }
   }
 }
