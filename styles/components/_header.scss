@@ -1,0 +1,67 @@
+@use "../abstract/root";
+@use "../abstract/variables";
+@use "../abstract/mixins";
+
+header {
+  background: variables.$first-gradiente;
+  padding: 2rem;
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    .linha {
+      border-top: 1px solid black;
+      width: 80%;
+    }
+    ul {
+      display: inline-flex;
+      gap: 2rem;
+      li {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+        color: variables.$first-color;
+        font-weight: 500;
+        font-family: variables.$ft-text;
+      }
+    }
+  }
+  #home {
+    max-width: 1040px;
+    @include mixins.margem-central(80%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .textos-home {
+      max-width: 464px;
+      h1 {
+        font-size: 42px;
+        color: variables.$first-color;
+        margin-bottom: 2rem;
+        font-family: variables.$ft-title;
+        span {
+          color: variables.$second-color;
+        }
+      }
+    }
+    .img-home {
+      max-width: 474px;
+      img {
+        width: 100%;
+      }
+    }
+    .btn-main {
+      width: 280px;
+      border-radius: 40px;
+      padding: 24px;
+      gap: 10px;
+      background-color: variables.$second-color;
+      font-family: variables.$ft-text;
+      font-size: 22px;
+      border: none;
+      color: white;
+    }
+  }
+}
