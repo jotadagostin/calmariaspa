@@ -14,7 +14,7 @@ header nav {
   align-items: center;
   gap: 1.6rem;
 }
-header nav .linha {
+header nav .line {
   border-top: 1px solid black;
   width: 80%;
 }
@@ -27,9 +27,10 @@ header nav ul li {
 }
 header nav ul a {
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   color: #0c0421;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
 }
 header #home {
   max-width: 1040px;
@@ -39,16 +40,16 @@ header #home {
   align-items: center;
   justify-content: space-between;
 }
-header #home .textos-home {
+header #home .texts-home {
   max-width: 464px;
 }
-header #home .textos-home h1 {
+header #home .texts-home h1 {
   font-size: 42px;
   color: #0c0421;
   margin-bottom: 2rem;
   font-family: "Krona One", sans-serif;
 }
-header #home .textos-home h1 span {
+header #home .texts-home h1 span {
   color: #4e75ff;
 }
 header #home .img-home {
@@ -69,7 +70,19 @@ header #home .btn-main {
   color: white;
 }
 
-#nosso-espaco {
+#our-space {
   margin: 0 auto;
   width: 80%;
+}
+#our-space .details {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+#our-space .details .imgs-space, #our-space .details .space-texts {
+  max-width: 500px;
+}
+#our-space .details .space-texts .separator {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
