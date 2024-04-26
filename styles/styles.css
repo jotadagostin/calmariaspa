@@ -32,6 +32,10 @@ header nav ul a {
   color: #0c0421;
   font-weight: 500;
 }
+header nav ul a:hover {
+  color: black;
+  font-weight: 700;
+}
 header #home {
   max-width: 1040px;
   margin: 0 auto;
@@ -68,6 +72,12 @@ header #home .btn-main {
   font-size: 22px;
   border: none;
   color: white;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+header #home .btn-main:hover {
+  opacity: 1;
 }
 
 #our-space {

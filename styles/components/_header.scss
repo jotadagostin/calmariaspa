@@ -28,6 +28,10 @@ header {
           variables.$first-color
         );
         font-weight: 500;
+        &:hover {
+          color: black;
+          font-weight: 700;
+        }
       }
     }
   }
@@ -65,6 +69,12 @@ header {
       font-size: 22px;
       border: none;
       color: white;
+      cursor: pointer;
+      opacity: 0.3;
+      transition: opacity 0.5s;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
