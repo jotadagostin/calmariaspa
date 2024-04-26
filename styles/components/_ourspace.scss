@@ -1,20 +1,41 @@
 @use "../abstract/mixins";
+@use "../abstract/variables";
 
 #our-space {
   @include mixins.margin-central(80%);
   .details {
+    width: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
+    padding: 2rem 0;
     .imgs-space {
       max-width: 500px;
     }
     .space-texts {
       @extend .imgs-space;
+      .title {
+        @include mixins.ff-fs-cl(
+          variables.$ft-title,
+          1.8rem,
+          variables.$second-color
+        );
+        font-weight: 500;
+      }
+      .infos {
+        @include mixins.ff-fs-cl(
+          variables.$ft-text,
+          1.2rem,
+          variables.$first-color
+        );
+      }
       .separator {
         width: 100%;
       }
+    }
+    &:nth-child(2) {
+      flex-direction: row-reverse;
     }
   }
 }
